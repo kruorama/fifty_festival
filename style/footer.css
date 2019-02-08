@@ -8,6 +8,67 @@
   background-color: #FFEED1;
 }
 
+.register .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.register h2 {
+  font-size: 24px;
+  margin-bottom: 48px;
+  line-height: 1.1;
+}
+.form {
+  margin: 48px 24px;
+}
+
+.sign-up {
+  display: flex;
+  border-bottom: solid 2px #00B290;
+  padding-bottom: 12px;
+
+}
+
+input{
+  background: none;
+  border: none;
+  font-size: 21px;
+  outline: none;
+}
+
+.email-input {
+  /* this forces the element to take all available space */
+  flex: 1;
+}
+
+
+
+
+
+.eyes {
+  background-image: url(../img/eyes_open.svg);
+  width: 108px;
+  height: 32px;
+}
+.hand {
+  background-image: url(../img/ok_hand.svg);
+  width: 57px;
+  height: 89px;
+ 	transform: rotate(10deg);
+  align-self: flex-end;
+}
+
+.eyes,
+.hand {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
 .footer {
   min-height: 35vh;
   display: flex;
@@ -21,29 +82,25 @@
 }
 .button {
   border: solid 2px #FFEED1;
-  color: #FFEED1;;
+  color: #FFEED1;
   line-height: 1;
   padding:  6px 12px;
   min-width: 120px;
   text-align: center;
   text-decoration: none;
 }
-.eyes {
-  background-image: url(../img/eyes_open.svg);
-  width: 108px;
-  height: 32px;
-}
-.hand {
-  background-image: url(../img/ok_hand.svg);
-  width: 57px;
-  height: 89px;
- 	transform: rotate(10deg);
-}
 
-.eyes,
-.hand {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 
+@media (max-width: 640px) {
+  .register .container {
+    flex-direction: column;
+  }
+
+  .register h2 {
+    font-size: 30px;
+  }
+
+  .form {
+    margin: 24px 0;
+  }
 }

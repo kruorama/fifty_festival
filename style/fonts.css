@@ -12,15 +12,13 @@
        url('../font/lunchtype24-medium-expanded-webfont.ttf') format('truetype');
 }
 
-body {
-  font-family: 'LunchType-Regular';
-  font-size: 18px;
-  line-height: 1.5;
-}
+
 
 .marquee,
 .lineup h2,
 .date,
-.button {
+.button,
+.register h2,
+.submit {
     font-family: 'LunchType-Medium', sans-serif;
 }

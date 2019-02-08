@@ -1,5 +1,8 @@
 body {
-  margin: 0
+  font-family: 'LunchType-Regular';
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
 }
 .section {
   min-height: 100vh;
@@ -158,4 +161,32 @@ ul {
 
 .scroll-to-intro {
   background-image: url(../img/down-arrow-light.svg);
+}
+
+@media (max-width: 640px) {
+  .marquee {
+    /* here we rest our marquee back to its default position */
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90vw;
+    margin-bottom: 24px;
+  }
+
+  .logo {
+    max-width: 64px;
+    margin-bottom: 24px;
+  }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  .scroll-to {
+    display: none;
+  }
+
+  .lineup h2 {
+    font-size: 30px;
+  }
 }
