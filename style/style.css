@@ -1,0 +1,158 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+}
+
+.section-pad {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.intro {
+  color: white;
+  background-image: url('../img/intro.jpg');
+  background-color: black;
+}
+
+.intro p {
+  font-size: 36px;
+  line-height: 1.2;
+}
+/* makes a hero image */
+.bg-cover {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  max-width: 112px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo img {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.difference {
+  mix-blend-mode: difference;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3000vw);
+  }
+}
+
+.marquee {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 100%;
+  font-size: 5vw;
+  overflow: hidden;
+}
+
+.marquee span {
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  animation: moveLeft 200s infinite;
+}
+
+.day {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.day .container {
+  position: relative;
+  z-index: 2;
+}
+
+.day-1 {
+  background-color: #ff74a7;
+}
+
+.day-2 {
+  background-color: #00b290;
+}
+
+.day-3 {
+  background-image: url('../img/day-3.jpg');
+}
+.date {
+  color: #ffeecf;
+  margin-bottom: 48px;
+  font-size: 28px;
+  line-height: 1;
+
+}
+.lineup h2 {
+  font-size: 56px;
+  line-height: 1;
+  margin-bottom: 6px
+}
+.lineup p {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.lineup li {
+  margin-bottom: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.scroll-to {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3vh;
+
+  width: 64px;
+  height: 32px;
+
+  background-image: url(../img/down-arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scroll-to-intro {
+  background-image: url(../img/down-arrow-light.svg);
+}

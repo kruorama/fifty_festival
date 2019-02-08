@@ -1,0 +1,49 @@
+.flex-column {
+  flex-direction: column;
+}
+
+.register {
+  min-height: 65vh;
+  display: flex;
+  background-color: #FFEED1;
+}
+
+.footer {
+  min-height: 35vh;
+  display: flex;
+  background-color: #111118;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 87px;
+	margin-bottom: 24px;
+}
+.button {
+  border: solid 2px #FFEED1;
+  color: #FFEED1;;
+  line-height: 1;
+  padding:  6px 12px;
+  min-width: 120px;
+  text-align: center;
+  text-decoration: none;
+}
+.eyes {
+  background-image: url(../img/eyes_open.svg);
+  width: 108px;
+  height: 32px;
+}
+.hand {
+  background-image: url(../img/ok_hand.svg);
+  width: 57px;
+  height: 89px;
+ 	transform: rotate(10deg);
+}
+
+.eyes,
+.hand {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
