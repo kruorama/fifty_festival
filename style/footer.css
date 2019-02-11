@@ -36,6 +36,10 @@ input{
   outline: none;
 }
 
+input:focus {
+  background-color: rgba(255,255,255,0.5)
+}
+
 .email-input {
   /* this forces the element to take all available space */
   flex: 1;
