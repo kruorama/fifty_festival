@@ -37,7 +37,7 @@ input{
 }
 
 input:focus {
-  background-color: rgba(255,255,255,0.5)
+  background-color: white;
 }
 
 .email-input {
@@ -57,6 +57,11 @@ input:focus {
 .submit:hover {
   background-color: rgba(255,255,255,0.5)
 }
+
+.submit:focus {
+  background-color: white;
+}
+
 
 .eyes {
   background-image: url(../img/eyes_open.svg);
